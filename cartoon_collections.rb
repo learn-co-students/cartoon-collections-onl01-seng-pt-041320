@@ -12,11 +12,5 @@ end
 
 def find_the_cheese(queso)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0
-  while i < queso.length
-    return queso[i] if cheese_types.include?(queso[i])
-    i+=1
-    end
+  queso.find {|fresco| fresco if cheese_types.include?(fresco)}
 end
-#
-# find_the_cheese(["bread", "gouda", "apple"])
