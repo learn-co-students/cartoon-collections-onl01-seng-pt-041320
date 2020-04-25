@@ -6,24 +6,33 @@ def long_planeteer_calls(words)# code an argument here
   i = 0
  while words.length > i 
    words.each do |word|
-  i += 1 
+   i += 1 
   
   if word.size > 4
       return_values.push true
-    return true 
-    puts "true"
+#      puts "#{word} is greater than 4"
+#      return true 
+#      puts "true"
   else
     return_values.push false
-    return false 
-    puts "false"
+#    puts "#{word} is less than 4"
+#    return false 
+#    puts "false"
   end
   
-  if return_values.include?(true)
+#  puts return_values
+  
+  
+   end
+   
+   if return_values.include?(true)
+#    return true
+#    puts "Final Value True, return values are #{return_values}"
     return true
-    puts "Final Value True"
   else
+#    return false
+#    puts "Final Value False, return values are #{return_values}"
     return false
-    puts "Final Value False"
   end
  end
 end
